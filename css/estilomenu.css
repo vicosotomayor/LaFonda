@@ -1,0 +1,16 @@
+body {background: rgba(255, 255, 255, 0.644);text-align:center}
+p {text-align: center;color: #50A7FF}
+a {color: #0055EA}
+ 
+div#menu {width:550px;margin: 0 auto;
+font: 90% "Trebuchet MS",Arial,sans-serif;text-align:left}
+h2 {margin: 1em auto 0.3em;color: red;
+font-size: 250%;text-align:center}
+ 
+dl {width: 100%;overflow: auto;margin: 0 0 1em;
+background: url(dot.gif) repeat-x 0 1.2em}
+dt,dd.price {background: #FFF;font-size: 130%;font-weight: bold}
+dd {margin:0}
+dd.price {float: right; padding-left: 3px; color: #000}
+dd.ingredients {float: left; width: 100%;padding: 3px 0;
+font: italic 100% Georgia,Times,sans-serif;color: #000}

@@ -1,0 +1,208 @@
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#000000;
+	margin-bottom:20px;
+}
+
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+}
+
+header nav {
+	float:right;
+	line-height:200px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+}
+
+/*-------Estilos del Banner-----*/
+.banner img{
+    width: 100%;
+   
+}
+.banner {
+   position: relative;
+		
+}
+.banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+/*-------Estilos de Info------*/
+ .info{
+    background: #333;
+    color: #fff;
+    text-align: center;
+     margin-top: -50px; 
+    
+}
+ .info__img{
+    border-radius: 50%;
+    border: 7px solid #444; 
+     position: relative;
+     
+    
+}
+.info__txt{
+    text-align: justify;
+    padding: 15px;
+}
+
+/*-------- Estilos de Platos--------*/
+.platos{
+    background: #361e0c; 
+    color: #fff;  
+    text-align: center;
+    padding: 15px;
+}
+.platos h3{
+    font-size: 30px;
+}
+.platos .platos__titulo{
+    font-size: 40px;
+}
+.platos .platos__txt{
+    text-align: justify;
+    padding: 15px;
+}
+.platos__img{
+    border-radius: 50%;
+    border: 7px solid #fff; 
+}
+/*---------- Estilos del  Mapa----------*/
+.mapa {
+    padding: 15px ;
+    background:  #F0EDE5;
+    text-align: center;
+}
+.mapa h3{
+    font-size: 25px;
+}
+.mapa p{
+    text-align: justify;
+	
+}
+/*--------Estilos del footer--------*/
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer img{
+    width: 50px;
+  
+    margin-right: 10px;
+
+}
+/*--------Estilos Responsive--------*/
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+}
+    .contenedor .banner__titulo{
+        font-size: 44px;
+    }
+    .contenedor .banner__txt{
+        font-size: 25px;   
+    }
+	.info__columna{
+        width: 32%;
+    }
+     .info .contenedor{
+    display: flex;
+		 justify-content: space-between;
+		 
+    }
+    
+    .platos .contenedor{  
+     display: flex; 
+     flex-wrap: wrap;
+     justify-content:space-around;
+}
+    .platos__columna{
+        width:  40%;
+    }
+    .platos h3{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:768px){
+      .platos__columna{
+        width: 24%; 
+    } 
+}
+
+@media(min-width:1024px){
+	.nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+	.menu__link{
+		border: none;
+	}
+    .banner .contenedor .banner__titulo{
+        font-size: 50px;  
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 36px; 
+    }
+    .contenedor{
+        width:1000px;
+    }
+   
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+     .banner .contenedor .banner__titulo{
+        font-size: 90px; 
+		
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 46px; 
+    }
+	
+	
+}
